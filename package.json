@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch src -e ts --exec ts-node src/demo01/index.ts",
+    "build": "tsc"
+  },
   "devDependencies": {
-    "@types/node": "^18.7.8"
+    "@types/node": "^18.7.8",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "typescript": "^4.7.4"
   }
 }
